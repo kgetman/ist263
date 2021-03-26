@@ -1,0 +1,11 @@
+body {background-color: #ffffff;}
+p {color: #000000;}
+a:link {color: #c3cbd9;}
+h1 {color: #99bcf7;}
+nav {background-color: #000000;
+    padding: 10px;}
+nav a {color: #ffffff;}
+nav a:hover {background-color: #99bcf7;}
+nav {margin-bottom: 30px}
+
+.evenrow {background-color: #99bcf7;}
