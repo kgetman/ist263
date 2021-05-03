@@ -1,0 +1,26 @@
+body {background-color: #2d3234;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {color: #ffffff; font-size: .90em;}
+main p {text-align: center;}
+
+a:link {color: #7ee78e;}
+
+h1 {color: #7ee78e; font-size: 3em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h2 {color: #7ee78e; font-size: 2em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+nav {background-color: #7ee78e;
+    color: #2d3234;
+    padding: 10px;
+    margin-bottom: 15px
+}
+nav a {color: #2d3234;}
+nav a:hover {background-color: #b1ee8e;
+            padding: 8px;
+            margin-bottom: 5px;
+        }
+
+
+
+
