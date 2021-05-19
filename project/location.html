@@ -58,6 +58,17 @@
     </style>
 
     <script>
+
+        function Start() {
+            document.getElementById("skimap").style.display = "none";
+            document.getElementById("scubamap").style.display = "none";
+            document.getElementById("icemap").style.display = "none";
+            document.getElementById("skymap").style.display = "none";
+            document.getElementById("mountainmap").style.display = "none";
+            document.getElementById("watermap").style.display = "none";
+            document.getElementById("kitemap").style.display = "none";
+        }
+
         function LocationOff() {
             document.getElementById("skiinfo").style.display = "none";
             document.getElementById("scubainfo").style.display = "none";
@@ -90,9 +101,42 @@
         function KiteOn() {
             document.getElementById("kiteinfo").style.display = "block"; 
         }
+
+        function MapOff() {
+            document.getElementById("map").style.display = "none";
+            document.getElementById("skimap").style.display = "none";
+            document.getElementById("scubamap").style.display = "none";
+            document.getElementById("icemap").style.display = "none";
+            document.getElementById("skymap").style.display = "none";
+            document.getElementById("mountainmap").style.display = "none";
+            document.getElementById("watermap").style.display = "none";
+            document.getElementById("kitemap").style.display = "none";
+        } 
+
+        function SkiMapOn() {
+            document.getElementById("skimap").style.display = "block"; 
+        }
+        function ScubaMapOn() {
+            document.getElementById("scubamap").style.display = "block"; 
+        }
+        function IceMapOn() {
+            document.getElementById("icemap").style.display = "block"; 
+        }
+        function SkyMapOn() {
+            document.getElementById("skymap").style.display = "block"; 
+        }
+        function MountainMapOn() {
+            document.getElementById("mountainmap").style.display = "block"; 
+        }
+        function WaterMapOn() {
+            document.getElementById("watermap").style.display = "block"; 
+        }
+        function KiteMapOn() {
+            document.getElementById("kitemap").style.display = "block"; 
+        } 
     </script>
 
-    <body class="content">
+    <body class="content" onload="Start();">
 
         <nav>
             <a href="../project/home.html">Home</a>
@@ -104,26 +148,66 @@
 
         <main>
 
-            <h1>Discover your next adventure</h1>
-
             <div class="map">
-            <img src="../project/images/world_map_blue-01.jpg" alt="World map with location beacons for places to find extreme sports" class="world_map">
+                <h1>Discover your next adventure</h1>
+                <img src="../project/images/world_map_all-01.jpg" alt="World map with location beacons for places to find extreme sports" class="world_map">
+                <p>View some of the craziest spots around the world for different extreme sports!</p>
             </div>
 
-            <p>View some of the craziest spots around the world for different extreme sports!</p>
+            <div id="skimap">
+                <h1>Discover your next adventure</h1>
+                <img src="../project/images/world_map_snowski-01.jpg" alt="World map with location beacons for skiing/snowboarding" class="world_map">
+                <p>View some of the craziest spots around the world for different extreme sports!</p>
+            </div>
+
+            <div id="scubamap">
+                <h1>Discover your next adventure</h1>
+                <img src="../project/images/world_map_scuba-01.jpg" alt="World map with location beacons for scuba diving" class="world_map">
+                <p>View some of the craziest spots around the world for different extreme sports!</p>
+            </div>
+
+            <div id="icemap">
+                <h1>Discover your next adventure</h1>
+                <img src="../project/images/world_map_ice-01.jpg" alt="World map with location beacons for ice climbing" class="world_map">
+                <p>View some of the craziest spots around the world for different extreme sports!</p>
+            </div>
+
+            <div id="skymap">
+                <h1>Discover your next adventure</h1>
+                <img src="../project/images/world_map_sky-01.jpg" alt="World map with location beacons for sky diving" class="world_map">
+                <p>View some of the craziest spots around the world for different extreme sports!</p>
+            </div>
+
+            <div id="mountainmap">
+                <h1>Discover your next adventure</h1>
+                <img src="../project/images/world_map_mountain-01.jpg" alt="World map with location beacons for mountain boarding" class="world_map">
+                <p>View some of the craziest spots around the world for different extreme sports!</p>
+            </div>
+
+            <div id="watermap">
+                <h1>Discover your next adventure</h1>
+                <img src="../project/images/world_map_waterski-01.jpg" alt="World map with location beacons for water skiing/wakeboarding/footing" class="world_map">
+                <p>View some of the craziest spots around the world for different extreme sports!</p>
+            </div>
+
+            <div id="kitemap">
+                <h1>Discover your next adventure</h1>
+                <img src="../project/images/world_map_kite-01.jpg" alt="World map with location beacons for kite surfing" class="world_map">
+                <p>View some of the craziest spots around the world for different extreme sports!</p>
+            </div>
 
         </main>
 
         <div id="slideshow-container">
 
             <div id="location_buttons">
-                <button id="ski" onclick="LocationOff(); SkiOn();">Skiing/Snowboarding</button>
-                <button id="scuba" onclick="LocationOff(); ScubaOn();">Scuba Diving</button>
-                <button id="ice_climb" onclick="LocationOff(); IceOn();">Ice Climbing</button>
-                <button id="skydive" onclick="LocationOff(); SkyOn();">Skydiving</button>
-                <button id="mountain" onclick="LocationOff(); MountainOn();">Mountain Boarding</button>
-                <button id="water" onclick="LocationOff(); WaterOn();">Water Skiing/Wakeboarding</button>
-                <button id="kite" onclick="LocationOff(); KiteOn();">Kite Surfing</button>
+                <button id="ski" onclick="LocationOff(); SkiOn(); MapOff(); SkiMapOn();">Skiing/Snowboarding</button>
+                <button id="scuba" onclick="LocationOff(); ScubaOn(); MapOff(); ScubaMapOn();">Scuba Diving</button>
+                <button id="ice_climb" onclick="LocationOff(); IceOn(); MapOff(); IceMapOn();">Ice Climbing</button>
+                <button id="skydive" onclick="LocationOff(); SkyOn(); MapOff(); SkyMapOn();">Skydiving</button>
+                <button id="mountain" onclick="LocationOff(); MountainOn(); MapOff(); MountainMapOn();">Mountain Boarding</button>
+                <button id="water" onclick="LocationOff(); WaterOn(); MapOff(); WaterMapOn()">Water Skiing/Wakeboarding</button>
+                <button id="kite" onclick="LocationOff(); KiteOn(); MapOff(); KiteMapOn();">Kite Surfing</button>
             </div>
 
             <div class="locationinfo">
