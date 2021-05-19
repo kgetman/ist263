@@ -7,20 +7,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sports</title>
         <link rel="stylesheet" href="../project/styles.css">
+        <style>
+            body {margin:25px;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  align-items: center;}
+            
+            div.polaroid {
+              width: 35%;
+              background-color: white;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              margin: 25px;
+            }
+            
+            div.container {
+            
+              text-align: center;
+              padding: 20px;
+            }
+            </style>
     </head>
 
-    <style>        
-        body, html {height: 100%;}
+    <style> 
 
+        /* The hero image */
         .hero-image {
+        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
         background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url("../project/images/extreme_sports2.jpg");
+
+        /* Set a specific height */
         height: 95%;
+
+        /* Position and center the image to scale nicely on all screens */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         }
 
+        /* Place text in the middle of the image */
         .hero-text {
         text-align: center;
         position: absolute;
@@ -29,29 +55,6 @@
         transform: translate(-50%, -50%);
         color: white;
         }
-        .hero-text p {color: white;}
-
-        div.polaroid {
-        width: 35%;
-        background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin: 25px;
-        }
-
-        div.container {
-        text-align: center;
-        padding: 20px;
-        }
-
-        .bottom {
-        margin:25px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        }
-
-        .bottom h3, p {color: #2d3234;}
 
     </style>
 
@@ -70,7 +73,6 @@
             </div>
         </div>
 
-        <section class="bottom">
             <div class="polaroid">
                 <img src="../project/images/snowboarding.jpg" alt="Snowboarder spraying snow on mountain" style="width:100%">
                 <div class="container">
@@ -78,7 +80,7 @@
                 <p>A recreational and competitive activity that involves descending a snow-covered slope while standing on a snowboard that is almost always attached to a rider's feet. The sport of snowboarding was inspired by skateboarding, sledding, surfing and skiing. It was developed in the United States in the 1960s, and became a Winter Olympic Sport in 1998. Modern snowboarding began in 1965 when Sherman Poppen invented a toy for his daughters by fastening two skis together and attaching a rope to one end so he would have some control as they glided downhill.</p>
                 </div>
             </div>
-
+              
             <div class="polaroid">
                 <img src="../project/images/scubadiving.jpg" alt="Scuba diver submerged with red lionfish" style="width:100%">
                 <div class="container">
@@ -86,7 +88,7 @@
                 <p>A mode of underwater diving where the diver uses an apparatus which is completely independent of surface supply to breathe underwater. The name "scuba", an acronym of "Self-Contained Underwater Breathing Apparatus", was first used by Christian J. Lambertsen in a patent submitted in 1952. Scuba divers carry their own source of breathing gas, usually compressed air, allowing them greater independence and freedom of movement than surface-supplied divers, and longer underwater endurance than breath-hold divers.</p>
                 </div>
             </div>
-
+              
             <div class="polaroid">
                 <img src="../project/images/iceclimbing.jpg" alt="Climber traversing ice wall" style="width:100%">
                 <div class="container">
@@ -189,9 +191,7 @@
                 <h3>Surfing</h3>
                 <p>A surface water sport in which a surfer uses a board to ride on the face of a moving wave of water, which usually carries the surfer towards the shore. Waves suitable for surfing are primarily found in the ocean, but can also be found in lakes or rivers. There are several types of boards. The Moche of Peru would often surf on reed craft, while the native peoples of the Pacific surfed waves on alaia, paipo, and other such water craft. Ancient cultures often surfed on their belly and knees, while the modern-day definition of surfing most often refers to a surfer riding a wave standing on a surfboard; this is also referred to as stand-up surfing.</p>
                 </div>
-            </div>
-
-        </section>
+            </div>    
 
         <div class="clear"></div>
     <hr>
