@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Locations</title>
+        <link rel="stylesheet" href="../project/styles.css">
+    </head>
+
+    <style>
+        main img {margin-left: 22%;}
+        button {background-color: transparent; font-size: 20px; border-radius: 6px; border: 2px solid #7ee78e; color: white; margin-bottom: 10px;}
+        button:hover {background-color: #9ea1a2; color: #2d3234;}
+        #location_buttons {text-align: center;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    margin-top: 50px;
+                }
+        
+        #skiinfo, #scubainfo, #iceinfo, #skyinfo, #mountaininfo, #waterinfo, #kiteinfo {display: flex; text-align: center;}
+
+        #skiname, #scubaname, #icename, #skyname, #mountainname, #watername, #kitename {text-align: center; align-items: center;}
+        
+/*
+        .ski1 {flex: 1; order: 1;}
+        .ski2 {flex: 1; order: 2;}
+        .ski3 {flex: 1; order: 3;}
+
+        .scuba1 {flex: 1; order: 1;}
+        .scuba2 {flex: 1; order: 2;}
+        .scuba3 {flex: 1; order: 3;}
+
+        .ice1 {flex: 1; order: 1;}
+        .ice2 {flex: 1; order: 2;}
+        .ice3 {flex: 1; order: 3;}
+
+        .sky1 {flex: 1; order: 1;}
+        .sky2 {flex: 1; order: 2;}
+        .sky3 {flex: 1; order: 3;}
+
+        .mountain1 {flex: 1; order: 1;}
+        .mountain2 {flex: 1; order: 2;}
+        .mountain3 {flex: 1; order: 3;}
+
+        .water1 {flex: 1; order: 1;}
+        .water2 {flex: 1; order: 2;}
+        .water3 {flex: 1; order: 3;}
+
+        .kite1 {flex: 1; order: 1;}
+        .kite2 {flex: 1; order: 2;}
+        .kite3 {flex: 1; order: 3;}
+
+      */  
+
+    </style>
+
+    <script>
+        function LocationOff() {
+            document.getElementById("skiinfo").style.display = "none";
+            document.getElementById("scubainfo").style.display = "none";
+            document.getElementById("iceinfo").style.display = "none";
+            document.getElementById("skyinfo").style.display = "none";
+            document.getElementById("mountaininfo").style.display = "none";
+            document.getElementById("waterinfo").style.display = "none";
+            document.getElementById("kiteinfo").style.display = "none";
+        }
+
+
+        function SkiOn() {
+            document.getElementById("skiinfo").style.display = "block"; 
+        }
+        function ScubaOn() {
+            document.getElementById("scubainfo").style.display = "block"; 
+        }
+        function IceOn() {
+            document.getElementById("iceinfo").style.display = "block"; 
+        }
+        function SkyOn() {
+            document.getElementById("skyinfo").style.display = "block"; 
+        }
+        function MountainOn() {
+            document.getElementById("mountaininfo").style.display = "block"; 
+        }
+        function WaterOn() {
+            document.getElementById("waterinfo").style.display = "block"; 
+        }
+        function KiteOn() {
+            document.getElementById("kiteinfo").style.display = "block"; 
+        }
+    </script>
+
+    <body class="content">
+
+        <nav>
+            <a href="../project/home.html">Home</a>
+            <a href="../project/sports.html">| Sports |</a>
+            <a href="../project/location.html">Locations</a>
+        </nav>
+
+        <hr>
+    
+        <main>
+
+            <h1>Discover your next adventure</h1>
+
+        <div class="map">
+        <img src="../project/images/world_map_blue-01.jpg" alt="World map with location beacons for places to find extreme sports" class="world_map">
+        </div>
+
+        <p> 
+            View some of the craziest spots around the world for different extreme sports! 
+        </p>
+
+        </main>
+
+        <div id="slideshow-container">
+            <div id="location_buttons">
+                <button id="ski" onclick="LocationOff(); SkiOn();">Skiing/Snowboarding</button>
+                <button id="scuba" onclick="LocationOff(); ScubaOn();">Scuba Diving</button>
+                <button id="ice_climb" onclick="LocationOff(); IceOn();">Ice Climbing</button>
+                <button id="skydive" onclick="LocationOff(); SkyOn();">Skydiving</button>
+                <button id="mountain" onclick="LocationOff(); MountainOn();">Mountain Boarding</button>
+                <button id="water" onclick="LocationOff(); WaterOn();">Water Skiing/Wakeboarding</button>
+                <button id="kite" onclick="LocationOff(); KiteOn();">Kite Surfing</button>
+        </div>
+
+            <div id="locationinfo">       
+
+                <div id="skiinfo">
+                    <div id="skiname"><h2>Skiing/Snowboarding</h2></div><br>
+                    <div class="ski1">
+                        <img src="../project/images/jackson_hole.jpg" alt="Mountain range in Jackson Hole, Wyoming" class="jackson_hole" height="80"> <br>
+                        Jackson Hole Mountain Resort <br> Jackson Hole, Wyoming USA <br> &#9733;&#9733;&#9733;&#9734;&#9734;
+                        </div>
+            
+                        <div class="ski2">
+                            <img src="../project/images/verbier_switzerland.webp" alt="Mountain range in Verbier, Switzerland" class="verbier" height="80"> <br>
+                            Verbier, Switzerland <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>
+            
+                        <div class="ski3">
+                            <img src="../project/images/chamonix.jpg" alt="Mountain range in Chamonix, France" class="chamonix" height="80"> <br>
+                            Chamonix Mont-Blanc <br> Chamonix, France <br> &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>                
+                </div>
+
+                <div id="scubainfo">
+                    <div id="scubaname"><h2>Scuba Diving</h2></div>
+                    <div class="scuba1">
+                        <img src="../project/images/pelagic_magic.jpg" alt="Sea turtle underwater in Hawaii" class="pelagic_magic" height="80"> <br>
+                        Pelagic Magic <br> Kona, Hawaii USA <br> &#9733;&#9733;&#9733;&#9734;&#9734;
+                        </div>
+            
+                        <div class="scuba2">
+                            <img src="../project/images/tulum_mexico.webp" alt="Temple and beach in Tulum, Mexico" class="tulum" height="80"> <br>
+                            The Temple of Doom <br> Tulum, Mexico  <br> &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
+            
+                        <div class="scuba3">
+                            <img src="../project/images/peterman.webp" alt="Glacier in Antarctica" class="peterman" height="80"> <br>
+                            Peterman Island <br> Antarctica <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>               
+                </div>
+
+                <div id="iceinfo">
+                    <div id="icename"><h2>Ice Climbing</h2></div>
+                    <div class="ice1">
+                        <img src="../project/images/rjukan_norway.jpg" alt="Glacier in Rjukan, Norway" class="rjukan" height="80"> <br>
+                        Rjukan, Norway <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>
+
+                        <div class="ice2">
+                            <img src="../project/images/annapurna_nepal.jpg" alt="Icy mountain range in Nepal" class="annapurna" height="80"> <br>
+                            Annapurna, Nepal <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>
+
+                        <div class="ice3">
+                            <img src="../project/images/cerro_torre.jpg" alt="Icy mountain range in Argentina" class="peterman" height="80"> <br>
+                            Cerro Torre <br> Southern Patagonian Ice Field <br> South America <br> &#9733;&#9733;&#9733;&#9734;&#9734;
+                        </div>               
+                </div>
+
+                <div id="skyinfo">
+                    <div id="skyname"><h2>Skydiving</h2></div>
+                    <div class="sky1">
+                        <img src="../project/images/las_vegas.webp" alt="Skyline of Las Vegas" class="vegas" height="80"> <br>
+                        Las Vegas, Nevada USA <br> &#9733;&#9733;&#9734;&#9734;&#9734;
+                        </div>
+
+                        <div class="sky2">
+                            <img src="../project/images/lauterbrunnen.jpg" alt="Town of Lauterbrunnen from above" class="lauterbrunnen" height="80"> <br>
+                            Lauterbrunnen, Switzerland <br> &#9733;&#9733;&#9733;&#9734;&#9734;
+                        </div>
+
+                        <div class="sky3">
+                            <img src="../project/images/everest_nepal.webp" alt="Mount Everest from a distance" class="everest" height="80"> <br>
+                            Mount Everest, Nepal <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>              
+                </div>
+
+                <div id="mountaininfo">
+                    <div id="mountainname"><h2>Mountain Boarding</h2></div>
+                    <div class="mountain1">
+                        <img src="../project/images/dragon_dirt.jpg" alt="Rocky mountain in Japan" class="dragon_dirt" height="80"> <br>
+                        Dragon Dirt <br> Japan <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>
+
+                        <div class="mountain2">
+                            <img src="../project/images/fairfield_ohio.jpg" alt="Covered bridge trail in Ohio" class="fairfield" height="80"> <br>
+                            Harbin Park <br> Fairfield, Ohio USA <br> &#9733;&#9733;&#9733;&#9734;&#9734;
+                        </div>
+
+                        <div class="mountain3">
+                            <img src="../project/images/malvern_hills.webp" alt="Hilly mountain trail in England" class="eastnor" height="80"> <br>
+                            Eastnor Castle Deer Park <br> Malvern Hills, England <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>            
+                </div>
+
+                <div id="waterinfo">
+                    <div id="watername"><h2>Water Skiing/Wakeboarding/Footing</h2></div>
+                    <div class="water1">
+                        <img src="../project/images/lake_como.jpg" alt="Lake Como with view of town from afar" class="como" height="80"> <br>
+                        Lake Como, Italy <br> &#9733;&#9733;&#9733;&#9734;&#9734;
+                        </div>
+
+                        <div class="water2">
+                            <img src="../project/images/dubai.webp" alt="Lake in Dubai at night with view of city" class="dubai" height="80"> <br>
+                            Dubai, UAE <br> &#9733;&#9733;&#9733;&#9734;&#9734;
+                        </div>
+
+                        <div class="water3">
+                            <img src="../project/images/lake_wanaka.jpg" alt="Tree in Lake Wanaka, New Zealand" class="wanaka" height="80"> <br>
+                            Lake Wanaka, New Zealand <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>           
+                </div>
+
+                <div id="kiteinfo">
+                    <div id="kitename"><h2>Kite Surfing</h2></div>
+                    <div class="kite1">
+                        <img src="../project/images/lavanovo_madagascar.webp" alt="Beach in Madagascar" class="como" height="80"> <br>
+                        Lavanono, Madagascar <br> &#9733;&#9733;&#9734;&#9734;&#9734;
+                        </div>
+
+                        <div class="kite2">
+                            <img src="../project/images/canos_de_mecca.jpg" alt="Beach in Cadiz, Spain" class="dubai" height="80"> <br>
+                        Canos de Meca <br> Cadiz, Spain <br> &#9733;&#9733;&#9733;&#9734;&#9734;
+                        </div>
+
+                        <div class="kite3">
+                            <img src="../project/images/le_morne.jpg" alt="Boat in ocean off coast of Mauritius Island" class="wanaka" height="80"> <br>
+                            Oum Labouir <br> Le Morne, Mauritius Island <br> &#9733;&#9733;&#9733;&#9733;&#9734;
+                        </div>          
+            </div>
+
+
+        <div class="clear"></div>
+        <hr>
+    
+        <footer>
+            <div class="copyright">
+            &copy; 2021 Adrenaline Rush
+            </div>
+            <div class="links">
+            Terms of Use | Privacy Policy | Legal
+            </div>
+        </footer>
+
+    </body>
+</html>
